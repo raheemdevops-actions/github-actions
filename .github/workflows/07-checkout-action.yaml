@@ -1,0 +1,13 @@
+name: Checkout Code
+on: [push]
+
+#job-1 and job-4 are parellel no dependency
+jobs: #pipeline
+  job-1: #pipeline1
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: checkout
+        run : actions/checkout@v5
+
+      - name: display the files
+        run : ls -la

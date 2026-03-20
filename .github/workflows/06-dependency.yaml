@@ -1,4 +1,4 @@
-name: Parellel
+name: Dependency
 on: [push]
 
 #job-1 and job-4 are parellel no dependency
