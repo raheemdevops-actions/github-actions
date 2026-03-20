@@ -10,4 +10,4 @@ jobs: #pipeline
     runs-on: ubuntu-latest
     steps: #stages
       - name: step1
-        run : sleep 30
+        run : sleep 30 
