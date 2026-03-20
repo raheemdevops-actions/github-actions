@@ -1,0 +1,31 @@
+name: Parellel
+on: [push]
+
+#job-1 and job-4 are parellel no dependency
+jobs: #pipeline
+  job-1: #pipeline1
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: step1
+        run : echo "Hi iamfrom job-1" 
+
+  job-2: #pipeline1
+    needs: job-1
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: step1
+        run : echo "Hi iamfrom job-2" 
+
+
+  job-3: #pipeline1
+    needs: job-2
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: step1
+        run : echo "Hi iamfrom job-3"
+
+  job-4: #pipeline1
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: step1
+        run : echo "Hi iamfrom job-3" 
