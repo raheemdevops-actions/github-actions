@@ -1,0 +1,11 @@
+name: self-hosted-runner
+on: [push]
+
+jobs: #pipeline
+  job1: #pipeline1
+    runs-on: self-hosted
+    steps: #stages
+      - name: step1
+        run: echo "Hello World"
+      - name: step2
+        run: echo "Hello Github Action"
