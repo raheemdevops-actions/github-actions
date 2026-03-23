@@ -1,5 +1,5 @@
 name: Concurrency
-on: [push]
+#on: [push]
 concurrency:
   #this workflow should be triggered for any branch only once
   group: ${{ github.workflow }}-${{ github.ref }}
