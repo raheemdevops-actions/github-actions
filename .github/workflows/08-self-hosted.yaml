@@ -3,7 +3,7 @@ on: [push]
 
 jobs: #pipeline
   job1: #pipeline1
-    runs-on: self-hosted
+    runs-on: [self-hosted, Linux, X64]
     steps: #stages
       - name: step1
         run: echo "Hello World"
